@@ -104,6 +104,10 @@ void LM75::thyst (float temp) {
   _register16(LM75_THYST_REGISTER, float2regdata(temp));
 }
 
+void LM75::setaddr (byte addr) {
+  address = addr;
+}
+
 boolean LM75::shutdown () {
   return conf() & 0x01;
 }

@@ -56,6 +56,7 @@ class LM75 {
     void tos (float);
     float thyst (void);
     void thyst (float);
+    void setaddr (byte);
     void shutdown (boolean);
     boolean shutdown (void);
 };
